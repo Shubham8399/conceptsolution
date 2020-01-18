@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,6 +29,7 @@
   </head>
   <body>
     <!-- header -->
+    <?php include('header.php');?>
     <!-- // header -->
     <div id="all">
       <div id="content">
@@ -158,9 +160,9 @@
               <div id="productMain" class="row">
                 <div class="col-md-6">
                   <div data-slider-id="1" class="owl-carousel shop-detail-carousel">
-                    <div class="item"> <img src="<?php echo $image ?? '';?>" alt="" class="img-fluid"></div>
-                    <div class="item"> <img src="<?php echo $image ?? '';?>" alt="" class="img-fluid"></div>
-                    <div class="item"> <img src="<?php echo $image ?? '';?>" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="<?php echo $image;?>" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="<?php echo $image;?>" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="<?php echo $image;?>" alt="" class="img-fluid"></div>
                   </div>
                   <div class="ribbon sale">
                     <div class="theribbon">SALE</div>
@@ -187,9 +189,9 @@
                     </p>
                   </div>
                   <div data-slider-id="1" class="owl-thumbs">
-                    <button class="owl-thumb-item"><img src="<?php echo $image ?? '';?>" alt="" class="img-fluid"></button>
-                    <button class="owl-thumb-item"><img src="<?php echo $image ?? '';?>" alt="" class="img-fluid"></button>
-                    <button class="owl-thumb-item"><img src="<?php echo $image ?? '';?>" alt="" class="img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="<?php echo $image;?>" alt="" class="img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="<?php echo $image;?>" alt="" class="img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="<?php echo $image;?>" alt="" class="img-fluid"></button>
                   </div>
                 </div>
               </div>
@@ -379,8 +381,8 @@
     </div>
     <!-- /#footer-->
     <!-- *** FOOTER END ***-->
-
-
+    
+    
     <!--
     *** COPYRIGHT ***
     _________________________________________________________

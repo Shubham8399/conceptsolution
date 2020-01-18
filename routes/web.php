@@ -30,4 +30,7 @@ Route::get('/category', 'Homecontroller@showcategory');
 
 Route::get('/detail', 'Homecontroller@showdetails');
 
+Route::get('/checkout', 'Homecontroller@show_checkout');
+
+
 // Route::resource('/home', 'Homecontroller');

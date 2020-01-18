@@ -35,20 +35,28 @@ class Homecontroller extends Controller
     }
     // REGISTER
     public function doregister(Request $request){
+
+        // REGISTER FORM VALIDATION
         $request->validate([
             'first_name'=> 'required|string|max:255',
             'last_name'=> 'required|string|max:255',
             'mobile'=>'required|string|min:1|max:10',
             'email'=> 'required|string|email|max:191|unique:users',
             'password'=>'required|string|min:6',
-        ]);
-        $first_name = $request->input('first_name');
-         $last_name = $request->input('last_name');
-         $mobile = $request->input('mobile');
-         $email = $request->input('email');
-         $password = $request->input('password');
-         $token=sha1(time());
-        $data=array('first_name'=>$first_name,"last_name"=>$last_name,"mobile"=>$mobile,"email"=>$email,"password"=>$password,"token"=>$token);
+             ]);
+
+            
+            $first_name = $request->input('first_name');
+            $last_name = $request->input('last_name');
+            $mobile = $request->input('mobile');
+            $email = $request->input('email');
+            $password = $request->input('password');
+            $token=sha1(time());
+            print_r($first_name);
+          
+           $data=array('first_name'=>$first_name,"last_name"=>$last_name,"mobile"=>$mobile,"email"=>$email,"password"=>$password,"token"=>$token);
+        print_r($data);
+        die();
         if($data > 0)
         {
         $insert=DB::table('user')->insert($data);
@@ -58,7 +66,7 @@ class Homecontroller extends Controller
         else{
             $post = array('S'=>"0", "message"=>"Missing parameter");
         }
-        echo json_encode($post);
+                return response()->json([$post], 201);
         }
         // Do LOGIN SHOW
        public function dologin(Request $request){
@@ -96,6 +104,12 @@ class Homecontroller extends Controller
         $users = DB::table('tbl_product')->get();
         $post = array('S'=>"1", "products"=>$users[0]);
         echo json_encode($post);
+      }
+
+      // SHOW CHECKOUT 
+
+      public function show_checkout(){
+         return view('checkout');
       }
 
 

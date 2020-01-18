@@ -170,7 +170,7 @@
                       <div class="col-md-6 col-lg-3">
                         <h5>Shop</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="index.html" class="nav-link">Homepage</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Homepage</a></li>
                           <li class="nav-item"><a href="/category" class="nav-link">Category - sidebar left</a></li>
                           <li class="nav-item"><a href="category-right.html" class="nav-link">Category - sidebar right</a></li>
                           <li class="nav-item"><a href="category-full.html" class="nav-link">Category - full width</a></li>
@@ -180,7 +180,8 @@
                       <div class="col-md-6 col-lg-3">
                         <h5>User</h5>
                         <ul class="list-unstyled mb-3">
-                          <li class="nav-item"><a href="register.html" class="nav-link">Register / login</a></li>
+                          <li class="nav-item"><a href="/register" class="nav-link">Register</a></li>
+                          <li class="nav-item"><a href="/login" class="nav-link">Register</a></li>
                           <li class="nav-item"><a href="customer-orders.html" class="nav-link">Orders history</a></li>
                           <li class="nav-item"><a href="customer-order.html" class="nav-link">Order history detail</a></li>
                           <li class="nav-item"><a href="customer-wishlist.html" class="nav-link">Wishlist</a></li>
@@ -191,7 +192,7 @@
                         <h5>Order process</h5>
                         <ul class="list-unstyled mb-3">
                           <li class="nav-item"><a href="basket.html" class="nav-link">Shopping cart</a></li>
-                          <li class="nav-item"><a href="checkout1.html" class="nav-link">Checkout - step 1</a></li>
+                          <li class="nav-item"><a href="/checkout" class="nav-link">Checkout - step 1</a></li>
                           <li class="nav-item"><a href="checkout2.html" class="nav-link">Checkout - step 2</a></li>
                           <li class="nav-item"><a href="checkout3.html" class="nav-link">Checkout - step 3</a></li>
                           <li class="nav-item"><a href="checkout4.html" class="nav-link">Checkout - step 4</a></li>
@@ -522,16 +523,16 @@
             <h4 class="mb-3">Top categories</h4>
             <h5>Men</h5>
             <ul class="list-unstyled">
-              <li><a href="category.html">T-shirts</a></li>
-              <li><a href="category.html">Shirts</a></li>
-              <li><a href="category.html">Accessories</a></li>
+              <li><a href="/category">T-shirts</a></li>
+              <li><a href="/category">Shirts</a></li>
+              <li><a href="/category">Accessories</a></li>
             </ul>
             <h5>Ladies</h5>
             <ul class="list-unstyled">
-              <li><a href="category.html">T-shirts</a></li>
-              <li><a href="category.html">Skirts</a></li>
-              <li><a href="category.html">Pants</a></li>
-              <li><a href="category.html">Accessories</a></li>
+              <li><a href="/category">T-shirts</a></li>
+              <li><a href="/category">Skirts</a></li>
+              <li><a href="/category">Pants</a></li>
+              <li><a href="/category">Accessories</a></li>
             </ul>
           </div>
           <!-- /.col-lg-3-->

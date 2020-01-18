@@ -17,7 +17,7 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
-Route::post('/insert_register', 'Homecontroller@doregister');
+Route::post('/register', 'Homecontroller@doregister');
 
 Route::post('/checklogin', 'Homecontroller@dologin');
 
