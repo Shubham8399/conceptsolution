@@ -1,0 +1,10 @@
+.modal-title{
+	padding-left: 50px;
+	text-transform: uppercase;
+	color: blue;
+	font-weight: bold;
+}
+/**/
+.validation_message{
+	color: red;
+}
